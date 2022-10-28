@@ -5,9 +5,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: red; */
+  background: #466a44;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*{
+  box-sizing: border-box;
+}
+h2{
+  /* background: #E14647; */
+  background: #C7495C;
+  padding: 18px;
+  color: #ffffff;
+}
+.App{
+  padding: 30px;
+  background: #fff;
+  width: 80%;
+  /* margin: 50px auto; */
+  margin: 122px auto;
+  box-shadow: 1px 2px 5px #eee;
+}
+input{
+  width: 80%;
+  border: 0;
+  padding: 6px 10px;
+  /* background: #e8e8e8; */
+  background: #E0D5BE;
+  color: brown;
+}
+input:focus{
+  outline: none;
+  color: brown;
+}
+button{
+  width: 20%;
+  border: 0;
+  padding: 6px 0;
+  margin: 0;
+  outline: 0;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  /* background: #4dc55b; */
+  background: #E0908D;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+li{
+  margin: 15px 0;
+}
+li span{
+  display: inline-block;
+  width: 60%;
+  color: #6a6a6a;
+}
+li > button:first-of-type{
+  /* background: #6a6a6a; */
+  background: #9AA8A8;
+  color: #fff;
+  margin-right: 1%;
+  width: 19%;
+}
+ul > form {
+  margin: 15px 0;
 }
