@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CRUD_React-Project_Class-Component/static/css/main.b7e91811.css",
+    "main.js": "/CRUD_React-Project_Class-Component/static/js/main.db703aad.js",
+    "static/js/787.f6b2eaaf.chunk.js": "/CRUD_React-Project_Class-Component/static/js/787.f6b2eaaf.chunk.js",
+    "index.html": "/CRUD_React-Project_Class-Component/index.html",
+    "main.b7e91811.css.map": "/CRUD_React-Project_Class-Component/static/css/main.b7e91811.css.map",
+    "main.db703aad.js.map": "/CRUD_React-Project_Class-Component/static/js/main.db703aad.js.map",
+    "787.f6b2eaaf.chunk.js.map": "/CRUD_React-Project_Class-Component/static/js/787.f6b2eaaf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7e91811.css",
+    "static/js/main.db703aad.js"
+  ]
+}
