@@ -4,64 +4,64 @@ import CourseForm from './components/CourseForm/CF'
 
 class App extends Component{
 
-state = {
-  // courses:[
-  //    { name : "html"},
-  //    { name : "css"},
-  //    { name : "js"}
-  // ],
-  courses: [],
-  current : ''
-}
+  state = {
+    // courses:[
+    //    { name : "html"},
+    //    { name : "css"},
+    //    { name : "js"}
+    // ],
+    courses: [],
+    current : ''
+  }
 
-//updatecourse
-updateCourse = (e) => {
-  //  console.log(e.target.value)
-   this.setState({
-      current : e.target.value
-   })
-}
+  //updatecourse
+  updateCourse = (e) => {
+    //  console.log(e.target.value)
+    this.setState({
+        current : e.target.value
+    })
+  }
 
-//addcourse
-addCourse = (e) => {
-  
-    e.preventDefault();
-    // console.log("course add")
-     let current =this.state.current;
-     let courses = this.state.courses;
-     courses.push({name: current})
-     this.setState({
-       courses,
-       current : ""
-     })
-  
+  //addcourse
+  addCourse = (e) => {
+    
+      e.preventDefault();
+      // console.log("course add")
+      let current =this.state.current;
+      let courses = this.state.courses;
+      courses.push({name: current})
+      this.setState({
+        courses,
+        current : ""
+      })
+    
 
-}
+  }
 
-//deleteCourse
-deleteCourse = (index) => {
-  let courses = this.state.courses
-  courses.splice(index,1)
-  // courses.filter((e) => {
-  //   return e.index !== index ? e : ""
-  // })
-  this.setState({
-    courses
-  })
-}
+  //deleteCourse
+  deleteCourse = (index) => {
+    let courses = this.state.courses
+    courses.splice(index,1)
+    // courses.filter((e) => {
+    //   return e.index !== index ? e : ""
+    // })
+    this.setState({
+      courses
+    })
+  }
 
-//editCourse
-editCourse = (index , value) => {
-  let courses = this.state.courses;
-  let course = courses[index];
-  course['name'] = value;
-  this.setState({
-    courses
-  })
-  // this.setState({
-  //   courses
-  // })
-}
+  //editCourse
+  editCourse = (index , value) => {
+    let courses = this.state.courses;
+    let course = courses[index];
+    course['name'] = value;
+    this.setState({
+      courses
+    })
+    // this.setState({
+    //   courses
+    // })
+  }
 
 
   render(){
