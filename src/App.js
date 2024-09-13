@@ -28,12 +28,15 @@ class App extends Component{
       e.preventDefault();
       // console.log("course add")
       let current =this.state.current;
+    if(current){
       let courses = this.state.courses;
       courses.push({name: current})
       this.setState({
         courses,
         current : ""
       })
+    }
+      
     
 
   }
@@ -66,6 +69,7 @@ class App extends Component{
 
   render(){
     const {courses} = this.state;
+    let length = courses.length;
     const courseList = courses.map((course, index)=>{
       // console.log(e, index)
       return   <CourseList key={index}  details={course}  deleteCourse={this.deleteCourse} index={index} update={this.handleChange} editCourse={this.editCourse}/>
@@ -75,7 +79,14 @@ class App extends Component{
       <section className="App">
          <h2>Add Courses</h2>
          <CourseForm  updateCourse={this.updateCourse}  addCourse={this.addCourse} current={this.state.current}/>
-         <ul>{courseList}</ul>
+         // <ul>{courseList}</ul>
+  <ul>
+          {this.state.courses.length > 0 ? (
+            courseList
+          ) : (
+            <p>there is no courses to show</p>
+          )}
+        </ul>
       </section>
     )
   }
