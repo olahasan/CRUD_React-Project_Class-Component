@@ -1,4 +1,4 @@
-# Todo List Application
+# CRUD_React-Project_Class-Component
 
 This is a simple Crud application built with ReactJs [class-component]. It allows users to add ,edit and delete courses that he want to study or any items. The application uses class components for state management and rendering.
 
