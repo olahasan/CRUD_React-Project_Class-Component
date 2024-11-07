@@ -84,7 +84,7 @@ class App extends Component{
           {this.state.courses.length > 0 ? (
             courseList
           ) : (
-            <p>there is no courses to show</p>
+            <p style={{ textAlign: "center" }}>there is no courses to show</p>
           )}
         </ul>
       </section>
